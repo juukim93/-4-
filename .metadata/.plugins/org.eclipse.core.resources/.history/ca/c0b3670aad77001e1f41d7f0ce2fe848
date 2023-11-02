@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>결제페이지</title>
+	<script src="https://js.tosspayments.com/v1/payment-widget"></script>
+</head>
+<body>
+	<div id="payment-method"></div>
+	<button id="payment-request-button">결제하기</button>
+	<script>
+		const clientKey = 'test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq' // 테스트용 클라이언트 키
+		const customerKey = 'geaekhuFzPibxy0mUJzkr' // 내 상점에서 고객을 구분하기 위해 발급한 고객의 고유 ID
+
+		// 2. 결제위젯 SDK 초기화
+		// const paymentWidget = PaymentWidget(clientKey, PaymentWidget.ANONYMOUS) // 비회원 결제
+		const paymentWidget = PaymentWidget(clientKey, customerKey);
+		paymentWidget.renderPaymentMethods("#payment-method", {value: 50000});
+		const paymentRequestButton = document.getElementById("payment-request-button");
+		 paymentRequestButton.addEventListener("click", () => {
+         paymentWidget.requestPayment({
+          orderId: generateRandomString(),
+          orderName: "첫주문",
+          successUrl: window.location.origin + "/success",
+          failUrl: window.location.origin + "/fail",
+        });
+      });
+		function generateRandomString() {
+        return window.btoa(Math.random()).slice(0, 20);
+      }
+	</script>
+</body>
+</html>

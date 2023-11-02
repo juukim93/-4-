@@ -1,0 +1,377 @@
+/* 전체페이지 */
+#wrap{
+      width:100%;
+      height: 1080px; 
+      position: relative
+      }
+
+/* 배경이미지 */
+.bg{
+    min-height: 40vh;
+    width: 100%;
+    height: 430px;
+    position: absolute;
+    background-image: url(https://demos.creative-tim.com/argon-dashboard-chakra/static/media/admin-background.5e664491.png);
+    background-size: cover;
+    top: 0px;
+    }
+
+/* 메인 */
+.main{
+      width: 260px; 
+      height: 860px;
+      margin-top: 33px; 
+      margin-left: 16px; 
+      float: left;
+      position: fixed;
+      background-color: #fff;
+      border-radius: 40px;
+      box-shadow: rgba(0, 0, 0, 0.05) 14px 14px 14px;
+      }
+
+
+
+/* 로고 */
+.logo{
+      margin: auto;
+      width: 130px;
+      }
+
+/* 메인메뉴 */
+.main_mn{
+        position: relative;
+        width: 200px; 
+        height: 500px; 
+        margin: auto; 
+        margin-top: 10px;
+        }
+
+
+/* 메인메뉴(홈) */
+.mn_box{
+          margin-top: 10px;
+          width: 190px;
+          height: 40px;
+          border-radius: 10px;
+          transition: box-shadow 0.3s ease;
+          }
+
+
+/* 메뉴이미지 배경 */
+.mn_icon{
+          float: left;
+          width:30px;
+          height: 30px;
+          border-radius: 20%;
+          transition: background-color 0.3s ease;
+        }
+
+/* 메뉴이미지 */
+.mn_box img{
+              margin-top: 3px;
+              margin-left: 3px;
+              filter: invert(44%) sepia(11%) saturate(3408%) hue-rotate(168deg) brightness(101%) contrast(86%);
+              transition: filter 0.3s ease;
+            }
+
+
+
+/* 메뉴 텍스트 */
+.clickable-span {
+                float: left;
+                font-size: 15px;
+                color: #A0AEC0;
+                margin-left: 20px;
+                margin-top: 7px;
+                font-weight: 900;
+                }
+
+
+/* 고객센터 텍스트 */
+.mn_center h2{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 20px
+}
+
+/* 메뉴 하단부분 */
+.footer{
+        width: 200px; 
+        height: 130px; 
+        margin: auto;
+        margin-top: 20px;
+        }
+        
+.footer h1{
+		   font-size: 20px;
+		  }
+  
+.footer p{
+           font-size: 15px;
+		  }
+
+/* 마이페이지 부분 */
+.mypage{
+		float: right;
+        position: relative;
+        height: 40px;
+        
+
+        align-items: center;
+        margin-top: 17px;
+        margin-right: 30px;
+		}
+
+
+/* 마이페이지 아이콘 부분 */
+.mypage_bt_icon{
+                float: left;
+                filter: invert(96%) sepia(0%) saturate(7500%) hue-rotate(271deg) brightness(102%) contrast(104%);
+              }
+
+/* 로그인 */
+.login{
+        float: right;
+        position: relative;
+        width: 90px;
+        height: 40px;
+
+        align-items: center;
+        margin-top: 17px;
+      }
+
+
+/* 로그인 텍스트 부분 */
+.login_bt_text{
+                float: left;
+                margin-right: 10px;
+                margin-left: 10px;
+                font-size: 20px;
+                font-weight: 900;
+                color: white;
+              }
+
+ /* 검색창 */
+.search{
+        float: right; 
+        position: relative; 
+        background-color: white;
+        width: 185px; 
+        height: 30px; 
+        border-radius: 10px; 
+        margin-right: 20px;
+        margin-top: 15px;
+        }
+
+/* 검색창 TEXT */
+.search input{outline: none;}
+
+/* 검색 내용 전송버튼 */
+.btn_submit{
+            background-image: url('../icon/검색.png');
+            background-position:  0px 0px;
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 30px;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            cursor:pointer;
+            outline: 0;
+            background-color:transparent;
+          }
+
+
+/* 메인이미지 */
+#main_img{
+          position: absolute;
+          width: 1500px; 
+          height: 930px; 
+          margin-top: 100px; 
+          margin-left: 310px;
+          border-radius: 20px;
+          box-shadow: rgba(0, 0, 0, 0.05) 14px 14px 14px;
+          background-color: #fff;
+          }
+
+#main_img .img_area{ 
+                    width: 1500px; 
+                    height: 510px; 
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 20px 20px 0 0;
+                    }
+#main_img .imgs li{
+                    width: 1500px; height: 1500px;
+                  }
+#main_img .imgs li:nth-child(1){ 
+                                position:absolute; left: 0; top:0;
+                                }
+#main_img .imgs li:nth-child(2){
+                                position:absolute; left: 100%; top:0; 
+                                }
+#main_img .imgs li:nth-child(3){ 
+                                position:absolute; left: 200%; top:0;
+                                }
+#main_img .imgs li:nth-child(4){ 
+                                position:absolute; left: 300%; top:0;
+                                }
+                                
+                                
+
+/* 메인이미지 버튼부분 */
+#main_img .btns{
+                position: absolute; 
+                left: 50%; 
+                margin-left:-35px;
+                bottom:30px;
+                z-index: 5000;
+                }
+#main_img .btns > li{ 
+                      float: left;
+                      margin-right: 10px; 
+                      width: 10px; 
+                      height: 10px;  
+                      cursor: pointer;
+                      border-radius: 50%; border: 1px solid #000;
+                    }
+
+#main_img .btns li.active {
+                            background-color: #ff0000; /* 원하는 색상으로 변경 */
+                            color: #fff; /* 텍스트 색상 변경 */
+                          }
+
+
+/* 중고매입 테이블 부분 */
+.row {
+  	  position: absolute;
+      width: 1500px; 
+      height: 930px; 
+      margin-top: 100px; 
+      margin-left: 310px;
+      border-radius: 20px 14px 14px 20px;
+      box-shadow: rgba(0, 0, 0, 0.05) 14px 14px 14px;
+      background-color: #fff;
+      overflow:auto;
+	  }
+
+.row::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 0 20px 20px 0;
+}
+.row::-webkit-scrollbar-thumb {
+								  background-color: #2f3542;
+								  border-radius: 10px;
+								  background-clip: padding-box;
+								  border: 2px solid transparent;
+							  }
+
+.row::-webkit-scrollbar-track {
+							  background-color: #fff;
+							  border-radius: 0 50px 50px 0;
+							  box-shadow: inset 0px 0px 5px white;
+							  }	
+
+/* 하단이미지 부분 */
+#main_img .footer_imgs{
+                        width: 1280px;
+                        height: 300px;
+                        margin-top: 60px;
+                        margin-left: 110px;
+                      }
+
+                      
+                      
+#map{
+	  display: inline-block;
+	  vertical-align: top;
+	  margin: 0;
+	  width:700px;height:600px;
+	  margin-top: 100px;
+	 }
+	 
+.center-write{
+			   display: inline-block;
+			   vertical-align: top;
+			   margin: 0;
+			   width: 700px;
+			   height: 350px;
+			   margin-left: 50px;
+			   margin-top: 50px;			   
+			 }
+
+.center-title{
+			  text-align: center;
+			  padding: 0.75rem 1.5rem;
+			  text-transform: capitalize;
+			  letter-spacing: 0px;
+			  border-bottom: 1px solid #e9ecef;
+			  }
+			  
+.center-detail{
+			   text-align: left;
+			   padding: 0.75rem 1.5rem;
+			   text-transform: capitalize;
+			   letter-spacing: 0px;
+			   border-bottom: 1px solid #e9ecef;
+			   height: 110px;
+			   }
+			   
+.center-detail #input1{
+					     float: right;
+					     width: 450px;
+					     font-size: 15px;
+						 border: 1px solid skyblue;
+						 border-radius: 15px;
+						 outline: none;
+						 padding-left: 10px;
+					   }
+
+#sample6_postcode{
+				  width: 350px;
+				  border: 1px solid skyblue;
+				  border-radius: 15px;
+				  outline: none;
+				  padding-left: 10px;
+				  margin-bottom: 5px;
+				 }
+
+#sample6_address{
+				 width: 450px;
+				 border: 1px solid skyblue;
+				 border-radius: 15px;
+				 outline: none;
+				 padding-left: 10px;
+				 margin-bottom: 5px;
+				 }
+#sample6_detailAddress{
+						border: 1px solid skyblue;
+						border-radius: 15px;
+						outline: none;
+						padding-left: 10px;
+					   }
+
+#sample6_extraAddress{
+					  border: 1px solid skyblue;
+					  border-radius: 15px;
+					  outline: none;
+					  padding-left: 10px;
+					  }
+
+#sample6_button{
+				border: 1px solid skyblue;
+				background-color: #fff;
+				border-radius: 15px;
+				font-size: 16px;
+}
+
+#sample6_button:hover{
+					  background-color: skyblue;
+					  color: #fff;
+					  }
+
+#center-app{
+			float: right;
+			border: 1px solid skyblue;
+			background-color: #fff;
+			border-radius: 15px;
+			}

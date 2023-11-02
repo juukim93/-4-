@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="./AnnouncementWriteAction.bo" method="post">
+			<article>
+				<h1>아이티윌 소식 게시판</h1>
+				<table id="notice">
+					<tr>
+						<th class="ttitle">게시판 글쓰기</th>
+						<th class="twrite"></th>
+					</tr>
+					<tr>
+						<td>글쓴이</td>
+						<td><input type="text" name="name"></td>
+					</tr>
+					<tr>
+						<td>제목</td>
+						<td><input type="text" name="subject"></td>
+					</tr>
+					<tr>
+						<td>내용</td>
+						<td><input type="text" name="content"></td>
+					</tr>
+					<tr>
+						<td>비밀번호</td>
+						<td><input type="password" name="pass"></td>
+					</tr>
+				</table>
+				<div id="table_search">
+					<input type="submit" value="글쓰기" class="btn">
+				</div>
+				<div class="clear"></div>
+				<div id="page_control"></div>
+			</article>
+		</form>
+
+</body>
+</html>

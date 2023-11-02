@@ -1,0 +1,7 @@
+// purgecss.config.js
+module.exports = {
+  content: ['*.html', 'src/**/*.js'], // CSS를 분석할 HTML 파일 및 JavaScript 파일 경로
+  css: ['path/to/your/css/file.css'], // 대상 CSS 파일
+  output: 'path/to/output.css', // 출력 경로를 설정
+  // 다양한 옵션 설정
+};

@@ -1,0 +1,5 @@
+package com.project4.board.action;
+
+public class BoardWriteAction {
+
+}
