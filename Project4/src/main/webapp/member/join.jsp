@@ -7,6 +7,6 @@
 <title>회원가입</title>
 </head>
 <body>
-
+	github 테스트 중
 </body>
 </html>
